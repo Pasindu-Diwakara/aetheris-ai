@@ -10,41 +10,41 @@ export default function Home() {
       
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-6 py-24 flex flex-col items-center text-center gap-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-card-border text-sm text-gray-300 mb-4 animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-card-border text-sm text-[var(--text-muted)] mb-4 animate-fade-in">
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
           Engineered for Next-Gen AI Models
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground max-w-4xl">
           Aetheris AI <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-gradient-start)] to-[var(--text-gradient-end)]">
             Elite Prompt Architecture
           </span>
         </h1>
         
-        <p className="text-lg text-gray-400 max-w-2xl leading-relaxed">
+        <p className="text-lg text-[var(--text-muted)] max-w-2xl leading-relaxed">
           The centralized intelligence hub to engineer, optimize, test, and manage production-grade master prompts. Achieve absolute physical realism and stylistic consistency.
         </p>
 
         <div className="flex items-center gap-4 mt-8">
-          <Link href="/generator" className="bg-foreground text-background font-medium px-8 py-4 rounded-xl flex items-center gap-2 hover:bg-gray-200 transition-colors">
+          <Link href="/generator" className="bg-foreground text-background font-medium px-8 py-4 rounded-xl flex items-center gap-2 hover:opacity-80 transition-colors">
             Open Studio <ArrowRight size={18} />
           </Link>
-          <Link href="/library" className="glass text-foreground font-medium px-8 py-4 rounded-xl flex items-center gap-2 hover:bg-white/5 transition-colors">
+          <Link href="/library" className="glass text-foreground font-medium px-8 py-4 rounded-xl flex items-center gap-2 hover:bg-[var(--btn-hover)] transition-colors">
             Browse Library
           </Link>
         </div>
       </main>
 
       {/* Featured Presets */}
-      <section className="border-t border-card-border bg-black/20">
+      <section className="border-t border-card-border bg-[var(--bg-muted)]">
         <div className="max-w-7xl mx-auto px-6 py-24">
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-2xl font-semibold mb-2">Featured Master Prompts</h2>
-              <p className="text-gray-400">Production-ready configurations for immediate use.</p>
+              <p className="text-[var(--text-muted)]">Production-ready configurations for immediate use.</p>
             </div>
-            <Link href="/library" className="text-sm font-medium text-gray-400 hover:text-accent transition-colors">
+            <Link href="/library" className="text-sm font-medium text-[var(--text-muted)] hover:text-accent transition-colors">
               View all →
             </Link>
           </div>

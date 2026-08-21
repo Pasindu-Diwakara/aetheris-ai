@@ -12,7 +12,7 @@ export default function Navbar() {
           </div>
           <span className="text-lg">Aetheris AI</span>
         </Link>
-        <div className="flex items-center gap-6 text-sm text-gray-400 font-medium">
+        <div className="flex items-center gap-6 text-sm text-[var(--text-muted)] font-medium">
           <Link href="/generator" className="hover:text-accent transition-colors flex items-center gap-1.5">
             <Terminal size={16} /> Studio
           </Link>

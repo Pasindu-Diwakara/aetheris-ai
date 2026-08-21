@@ -16,6 +16,14 @@
   --accent: #000000;
   --card: rgba(255, 255, 255, 0.8);
   --card-border: rgba(0, 0, 0, 0.1);
+  --text-muted: #525252;
+  --text-subtle: #737373;
+  --bg-muted: rgba(0, 0, 0, 0.05);
+  --bg-darker: rgba(0, 0, 0, 0.1);
+  --btn-hover: rgba(0, 0, 0, 0.15);
+  --text-hover: #000000;
+  --text-gradient-start: #737373;
+  --text-gradient-end: #404040;
 }
 
 .dark {
@@ -24,6 +32,14 @@
   --accent: #ffffff;
   --card: rgba(20, 20, 20, 0.6);
   --card-border: rgba(255, 255, 255, 0.08);
+  --text-muted: #9ca3af;
+  --text-subtle: #6b7280;
+  --bg-muted: rgba(0, 0, 0, 0.4);
+  --bg-darker: rgba(0, 0, 0, 0.6);
+  --btn-hover: #1f2937;
+  --text-hover: #ffffff;
+  --text-gradient-start: #9ca3af;
+  --text-gradient-end: #4b5563;
 }
 
 body {
