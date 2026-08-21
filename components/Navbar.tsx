@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Terminal, Library, Layers } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
 
 export default function Navbar() {
   return (
@@ -21,6 +22,9 @@ export default function Navbar() {
           <Link href="/collections" className="hover:text-accent transition-colors flex items-center gap-1.5">
             <Layers size={16} /> Collections
           </Link>
+          <div className="pl-4 border-l border-card-border ml-2 flex items-center">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </nav>
