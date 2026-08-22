@@ -3,10 +3,9 @@ import { PrismaClient } from '../app/generated/prisma/client';
 import { PrismaLibSql } from '@prisma/adapter-libsql';
 import { createClient } from '@libsql/client';
 
-const libsql = createClient({
+const adapter = new PrismaLibSql({
   url: 'file:./dev.db',
 });
-const adapter = new PrismaLibSql(libsql);
 const prisma = new PrismaClient({ adapter });
 
 async function main() {

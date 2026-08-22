@@ -5,10 +5,9 @@ import { PrismaLibSql } from '@prisma/adapter-libsql';
 import { createClient } from '@libsql/client';
 import { revalidatePath } from 'next/cache';
 
-const libsql = createClient({
+const adapter = new PrismaLibSql({
   url: 'file:./dev.db',
 });
-const adapter = new PrismaLibSql(libsql);
 const prisma = new PrismaClient({ adapter });
 
 export async function savePromptAction(
