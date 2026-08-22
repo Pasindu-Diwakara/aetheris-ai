@@ -11,35 +11,35 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --accent: #000000;
-  --card: rgba(255, 255, 255, 0.8);
-  --card-border: rgba(0, 0, 0, 0.1);
-  --text-muted: #525252;
-  --text-subtle: #737373;
-  --bg-muted: rgba(0, 0, 0, 0.05);
-  --bg-darker: rgba(0, 0, 0, 0.1);
-  --btn-hover: rgba(0, 0, 0, 0.15);
+  --background: #fafafa;
+  --foreground: #09090b;
+  --accent: #27272a;
+  --card: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(0, 0, 0, 0.08);
+  --text-muted: #71717a;
+  --text-subtle: #a1a1aa;
+  --bg-muted: rgba(0, 0, 0, 0.03);
+  --bg-darker: rgba(0, 0, 0, 0.08);
+  --btn-hover: rgba(0, 0, 0, 0.1);
   --text-hover: #000000;
-  --text-gradient-start: #737373;
-  --text-gradient-end: #404040;
+  --text-gradient-start: #52525b;
+  --text-gradient-end: #18181b;
 }
 
 .dark {
-  --background: #050505;
-  --foreground: #e5e5e5;
+  --background: #030303;
+  --foreground: #fafafa;
   --accent: #ffffff;
-  --card: rgba(20, 20, 20, 0.6);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --text-muted: #9ca3af;
-  --text-subtle: #6b7280;
-  --bg-muted: rgba(0, 0, 0, 0.4);
-  --bg-darker: rgba(0, 0, 0, 0.6);
-  --btn-hover: #1f2937;
+  --card: rgba(12, 12, 14, 0.7);
+  --card-border: rgba(255, 255, 255, 0.05);
+  --text-muted: #a1a1aa;
+  --text-subtle: #71717a;
+  --bg-muted: rgba(255, 255, 255, 0.03);
+  --bg-darker: rgba(255, 255, 255, 0.08);
+  --btn-hover: rgba(255, 255, 255, 0.1);
   --text-hover: #ffffff;
-  --text-gradient-start: #9ca3af;
-  --text-gradient-end: #4b5563;
+  --text-gradient-start: #e4e4e7;
+  --text-gradient-end: #71717a;
 }
 
 body {

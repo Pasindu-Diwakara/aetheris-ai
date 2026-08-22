@@ -8,7 +8,7 @@ export default function GeneratorPage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [optimizedPrompt, setOptimizedPrompt] = useState('');
 
-  const handleOptimize = (e: React.FormEvent) => {
+  const handleOptimize = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!rawIdea.trim()) return;
 
@@ -16,11 +16,24 @@ export default function GeneratorPage() {
     setOptimizedPrompt('');
 
     // Simulate API call for prompt enhancement
-    setTimeout(() => {
-      setOptimizedPrompt(
-        `Professional photography of ${rawIdea}, ultra-detailed, highly realistic, physical lighting, avoiding unnatural glows, shot on 35mm lens, f/1.8, cinematic aesthetic, highly structured composition --ar 16:9 --style raw`
-      );
+    const result = `Professional photography of ${rawIdea}, ultra-detailed, highly realistic, physical lighting, avoiding unnatural glows, shot on 35mm lens, f/1.8, cinematic aesthetic, highly structured composition --ar 16:9 --style raw`;
+    
+    setTimeout(async () => {
+      setOptimizedPrompt(result);
       setIsProcessing(false);
+      
+      // Save to DB
+      try {
+        const { savePromptAction } = await import('@/app/actions/prompt');
+        await savePromptAction(
+          rawIdea.slice(0, 30) + '...', // Using a simple title
+          'Photography', // Default category
+          rawIdea,
+          result
+        );
+      } catch (error) {
+        console.error('Failed to save prompt:', error);
+      }
     }, 1500);
   };
 
