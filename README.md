@@ -35,7 +35,7 @@
 * **One-Click Copy & Management:** Instant clipboard integration and user collections dashboard to organize optimized prompts.
 * **Sleek Minimalist UI:** Designed with a high-end monochrome dark-mode aesthetic tailored for developer portfolios.
 
----
+----
 
 ## 📁 Project Architecture
 
